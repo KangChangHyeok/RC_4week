@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278BED092850512D002EF804 /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 278BED082850512D002EF804 /* DungGeunMo.otf */; };
+		278BED0B28508D12002EF804 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BED0A28508D12002EF804 /* PopUpViewController.swift */; };
 		27A06440285048C600AA00DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0643F285048C600AA00DC /* AppDelegate.swift */; };
 		27A06442285048C600AA00DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A06441285048C600AA00DC /* SceneDelegate.swift */; };
 		27A06444285048C600AA00DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A06443285048C600AA00DC /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		278BED082850512D002EF804 /* DungGeunMo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DungGeunMo.otf; path = ../../../../../Downloads/DungGeunMo.otf; sourceTree = "<group>"; };
+		278BED0A28508D12002EF804 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		27A0643C285048C600AA00DC /* ImageCatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A0643F285048C600AA00DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27A06441285048C600AA00DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				27A0643F285048C600AA00DC /* AppDelegate.swift */,
 				27A06441285048C600AA00DC /* SceneDelegate.swift */,
 				27A06443285048C600AA00DC /* ViewController.swift */,
+				278BED0A28508D12002EF804 /* PopUpViewController.swift */,
 				27A06445285048C600AA00DC /* Main.storyboard */,
 				27A06448285048C700AA00DC /* Assets.xcassets */,
 				27A0644A285048C700AA00DC /* LaunchScreen.storyboard */,
 				27A0644D285048C700AA00DC /* Info.plist */,
+				278BED082850512D002EF804 /* DungGeunMo.otf */,
 			);
 			path = ImageCatch;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				27A0644C285048C700AA00DC /* LaunchScreen.storyboard in Resources */,
 				27A06449285048C700AA00DC /* Assets.xcassets in Resources */,
+				278BED092850512D002EF804 /* DungGeunMo.otf in Resources */,
 				27A06447285048C600AA00DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				27A06444285048C600AA00DC /* ViewController.swift in Sources */,
 				27A06440285048C600AA00DC /* AppDelegate.swift in Sources */,
 				27A06442285048C600AA00DC /* SceneDelegate.swift in Sources */,
+				278BED0B28508D12002EF804 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

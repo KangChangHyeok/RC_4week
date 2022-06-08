@@ -1,24 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DungGeunMo.otf">
+            <string>DungGeunMo</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainV" id="BYZ-38-t0r" customClass="ViewController" customModule="ImageCatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Catch!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZH-B6-L3O">
+                                <rect key="frame" x="94" y="41" width="240" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="mE3-iz-lba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-07-b1F">
+                                <rect key="frame" x="176.66666666666666" y="101" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="fGv-QI-cII"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R59-Uc-G8Z">
+                                <rect key="frame" x="50" y="194" width="328" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="potatochip_blue" translatesAutoresizingMaskIntoConstraints="NO" id="nad-wF-yb0">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="149.33333333333334"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="potatochip_green" translatesAutoresizingMaskIntoConstraints="NO" id="tgH-5y-Nns">
+                                        <rect key="frame" x="0.0" y="149.33333333333331" width="328" height="149.33333333333331"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="potatochip_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="dze-2O-xjK">
+                                        <rect key="frame" x="0.0" y="298.66666666666669" width="328" height="149.33333333333331"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vUl-YF-Uge">
+                                <rect key="frame" x="50" y="700" width="328" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="K3U-lI-dcl">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.33333333333333" height="50"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="Wzj-YE-wkz">
+                                        <rect key="frame" x="109.33333333333334" y="0.0" width="109.33333333333334" height="50"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="O5B-cD-l8D">
+                                        <rect key="frame" x="218.66666666666671" y="0.0" width="109.33333333333334" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5xy-4l-94c"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeA-wv-nlI">
+                                <rect key="frame" x="154" y="780" width="120" height="52"/>
+                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Catch!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="catchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnJ-R3-4Eq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fever Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGB-0d-UPw">
+                                <rect key="frame" x="139" y="146" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JyG-bz-rXT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IGB-0d-UPw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xf-uH-ESl"/>
+                            <constraint firstItem="qeA-wv-nlI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9oG-7W-449"/>
+                            <constraint firstItem="IGB-0d-UPw" firstAttribute="top" secondItem="gHQ-07-b1F" secondAttribute="bottom" constant="15" id="EIM-Ne-wV0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qeA-wv-nlI" secondAttribute="bottom" constant="60" id="GtK-La-LUt"/>
+                            <constraint firstItem="gHQ-07-b1F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kc3-M5-hGs"/>
+                            <constraint firstItem="gHQ-07-b1F" firstAttribute="top" secondItem="jZH-B6-L3O" secondAttribute="bottom" constant="20" id="SnX-DY-SDS"/>
+                            <constraint firstItem="vUl-YF-Uge" firstAttribute="trailing" secondItem="R59-Uc-G8Z" secondAttribute="trailing" id="e7X-hB-8d4"/>
+                            <constraint firstItem="R59-Uc-G8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ffF-4f-Zie"/>
+                            <constraint firstItem="qeA-wv-nlI" firstAttribute="top" secondItem="vUl-YF-Uge" secondAttribute="bottom" constant="30" id="hAQ-wH-rcS"/>
+                            <constraint firstItem="vUl-YF-Uge" firstAttribute="top" secondItem="IGB-0d-UPw" secondAttribute="bottom" constant="524" id="jPh-9K-X69"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R59-Uc-G8Z" secondAttribute="trailing" constant="50" id="jvk-z0-EbM"/>
+                            <constraint firstItem="R59-Uc-G8Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="tVy-sJ-eSo"/>
+                            <constraint firstItem="jZH-B6-L3O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u3c-99-fT6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R59-Uc-G8Z" secondAttribute="bottom" constant="250" id="uRB-1m-kFq"/>
+                            <constraint firstItem="vUl-YF-Uge" firstAttribute="leading" secondItem="R59-Uc-G8Z" secondAttribute="leading" id="vrN-Qd-AFA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstImage" destination="nad-wF-yb0" id="0Ie-Hm-ZaU"/>
+                        <outlet property="firstLife" destination="K3U-lI-dcl" id="h3Y-pf-9Vz"/>
+                        <outlet property="gameFeverTime" destination="IGB-0d-UPw" id="Ytd-gf-yO2"/>
+                        <outlet property="gamescore" destination="gHQ-07-b1F" id="PCG-Hv-tgQ"/>
+                        <outlet property="secondImage" destination="tgH-5y-Nns" id="ZGB-sY-nOa"/>
+                        <outlet property="secondLife" destination="Wzj-YE-wkz" id="kF9-Q7-FJE"/>
+                        <outlet property="thridImage" destination="dze-2O-xjK" id="8OX-mi-vyD"/>
+                        <outlet property="thridLife" destination="O5B-cD-l8D" id="7JE-uT-HeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.037383177570092" y="83.585313174946009"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="L7b-i1-J9z">
+            <objects>
+                <viewController storyboardIdentifier="popupVC" id="Of6-ob-JoO" customClass="PopUpViewController" customModule="ImageCatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FUl-rT-ae7">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-5S-dGM">
+                                <rect key="frame" x="50" y="363" width="328" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게임을 다시 진행하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aos-4V-29C">
+                                        <rect key="frame" x="10" y="30" width="308" height="20"/>
+                                        <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 점수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-gC-9Nt">
+                                        <rect key="frame" x="10" y="70" width="130" height="20"/>
+                                        <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="점수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ll-ZP-CdX">
+                                        <rect key="frame" x="160" y="70" width="40" height="20"/>
+                                        <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ifc-vd-zoB">
+                                        <rect key="frame" x="10" y="150" width="308" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p8-wm-ufm">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
+                                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Yes">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="yesButtonTapped:" destination="Of6-ob-JoO" eventType="touchUpInside" id="V7c-Kv-epa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-9u-Z5j">
+                                                <rect key="frame" x="159" y="0.0" width="149" height="30"/>
+                                                <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="NO">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="noButtonTapped:" destination="Of6-ob-JoO" eventType="touchUpInside" id="nhr-fZ-G6m"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UkI-f5-FLE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No버튼을 누르게 되면 게임이 종료됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xio-VG-0EH">
+                                        <rect key="frame" x="10" y="105" width="308" height="14.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="DungGeunMo" family="DungGeunMo" pointSize="14"/>
+                                        <color key="textColor" red="0.44705885649999999" green="0.44705885649999999" blue="0.44705885649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ifc-vd-zoB" firstAttribute="leading" secondItem="Lnd-5S-dGM" secondAttribute="leading" constant="10" id="0PR-zP-WWT"/>
+                                    <constraint firstItem="uaB-gC-9Nt" firstAttribute="leading" secondItem="Lnd-5S-dGM" secondAttribute="leading" constant="10" id="3jX-RN-laq"/>
+                                    <constraint firstItem="xio-VG-0EH" firstAttribute="leading" secondItem="Lnd-5S-dGM" secondAttribute="leading" constant="10" id="4XC-16-qay"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ifc-vd-zoB" secondAttribute="trailing" constant="10" id="HdB-4V-0dE"/>
+                                    <constraint firstAttribute="height" constant="200" id="M6M-jM-ckv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aos-4V-29C" secondAttribute="trailing" constant="10" id="Srw-9e-zgt"/>
+                                    <constraint firstAttribute="trailing" secondItem="xio-VG-0EH" secondAttribute="trailing" constant="10" id="W2s-YK-d7M"/>
+                                    <constraint firstItem="2ll-ZP-CdX" firstAttribute="leading" secondItem="uaB-gC-9Nt" secondAttribute="trailing" constant="20" id="azB-T6-bpN"/>
+                                    <constraint firstItem="uaB-gC-9Nt" firstAttribute="top" secondItem="Aos-4V-29C" secondAttribute="bottom" constant="20" id="hX4-WM-paT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ifc-vd-zoB" secondAttribute="bottom" constant="20" id="ilP-zX-5he"/>
+                                    <constraint firstItem="Aos-4V-29C" firstAttribute="centerX" secondItem="Lnd-5S-dGM" secondAttribute="centerX" id="oHs-wN-SzW"/>
+                                    <constraint firstItem="Aos-4V-29C" firstAttribute="top" secondItem="Lnd-5S-dGM" secondAttribute="top" constant="30" id="ot8-8M-b6C"/>
+                                    <constraint firstItem="xio-VG-0EH" firstAttribute="top" secondItem="uaB-gC-9Nt" secondAttribute="bottom" constant="15" id="pWS-Xd-ZK3"/>
+                                    <constraint firstItem="2ll-ZP-CdX" firstAttribute="centerY" secondItem="uaB-gC-9Nt" secondAttribute="centerY" id="prK-Ci-oEJ"/>
+                                    <constraint firstItem="Ifc-vd-zoB" firstAttribute="centerX" secondItem="Lnd-5S-dGM" secondAttribute="centerX" id="qqH-cm-Hw8"/>
+                                    <constraint firstItem="Aos-4V-29C" firstAttribute="leading" secondItem="Lnd-5S-dGM" secondAttribute="leading" constant="10" id="vtr-II-thf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RFU-n3-dng"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.43806912251655628" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RFU-n3-dng" firstAttribute="trailing" secondItem="Lnd-5S-dGM" secondAttribute="trailing" constant="50" id="1x8-J6-mH1"/>
+                            <constraint firstItem="Lnd-5S-dGM" firstAttribute="leading" secondItem="RFU-n3-dng" secondAttribute="leading" constant="50" id="d0L-NM-hTU"/>
+                            <constraint firstItem="Lnd-5S-dGM" firstAttribute="centerX" secondItem="FUl-rT-ae7" secondAttribute="centerX" id="k34-um-NIE"/>
+                            <constraint firstItem="Lnd-5S-dGM" firstAttribute="centerY" secondItem="FUl-rT-ae7" secondAttribute="centerY" id="prw-2h-6VP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myScore" destination="2ll-ZP-CdX" id="UxD-gy-J7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ve-WO-NT1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902.80373831775694" y="83.585313174946009"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana" width="32" height="32"/>
+        <image name="potatochip_blue" width="32" height="32"/>
+        <image name="potatochip_green" width="32" height="32"/>
+        <image name="potatochip_yellow" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
